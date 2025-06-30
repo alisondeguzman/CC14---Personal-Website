@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Alison De Guzman</title>
+  
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body class="about">
+
+  <header>
+    <div class="header-container">
+      <div class="border-box"></div>
+      <div class="nav-wrapper">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="about-main">
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <div class="profile-header">
+        <img src="images/profile.jpg" alt="Alison De Guzman" class="profile-img" />
+        <div class="profile-text">
+          <h1>ALISON DE GUZMAN</h1>
+          <p>
+            "Hello! I am Alison-- a multimedia arts student studying at the University of the Cordilleras. Here, I bring to you my best creations and personal works. I do both traditional and digital art, but I am mostly into digitalized works. Enjoy browsing through my portfolio, and feel free to contact me for any inquiries or commissions!"
+          </p>
+        </div>
+      </div>
+
+      <!-- Galleries -->
+      <div class="galleries">
+        <div class="gallery-wrapper">
+          <div class="gallery-label">PROJECTS</div>
+          <div class="gallery" id="projects-gallery">
+            <button onclick="previousSlide('projects-gallery')">❮</button>
+            <img src="images/projects 2.jpg" alt="Project">
+            <button onclick="nextSlide('projects-gallery')">❯</button>
+          </div>
+        </div>
+
+        <div class="gallery-wrapper">
+          <div class="gallery-label">COMMISSIONS</div>
+          <div class="gallery" id="commissions-gallery">
+            <button onclick="previousSlide('commissions-gallery')">❮</button>
+            <img src="images/commissions 1.jpg" alt="Commission">
+            <button onclick="nextSlide('commissions-gallery')">❯</button>
+          </div>
+        </div>
+
+        <div class="gallery-wrapper">
+          <div class="gallery-label">ANIMATIONS</div>
+          <div class="gallery" id="animations-gallery">
+            <button onclick="previousSlide('animations-gallery')">❮</button>
+            <img src="images/animations 1.GIF" alt="Animation">
+            <button onclick="nextSlide('animations-gallery')">❯</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Creations -->
+    <section class="personal-section">
+      <div class="tab personal-tab">PERSONAL CREATIONS</div>
+      <div class="gallery personal-gallery" id="personal-gallery">
+        <button onclick="previousSlide('personal-gallery')">❮</button>
+        <img src="images/personal creations 1.JPG" alt="Personal Creation">
+        <button onclick="nextSlide('personal-gallery')">❯</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
